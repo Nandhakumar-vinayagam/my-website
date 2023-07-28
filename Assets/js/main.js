@@ -15,3 +15,13 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+function closeNavbar() {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+
+        if (navbarToggler.classList.contains('collapsed')) {
+            return; // Navbar is already closed, no need to do anything.
+        }
+
+        navbarToggler.click(); // Programmatically trigger the click event to close the navbar.
+    }
